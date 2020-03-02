@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+		<style>
+			section:before{
+				height: 54px;
+				content: "";
+				display: block;
+			}
+
+			section{
+				min-height: 100vh;
+			}
+
+			#section-showcase{
+				background-image: url(./image/showcase.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			html{
+				scroll-behavior: smooth;
+			}
+		</style>
+	<head>
+
+	<body>
+		<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#section-showcase"><strong>Portfolio</strong></a>
+
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class='collapse navbar-collapse' id='menu'>
+				<ul class='nav navbar-nav ml-auto'>
+					<li class="nav-item"> 
+						<a class="nav-link" href="#section-home"> Home </a>	
+					</li>
+					<li class="nav-item"> 
+						<a class="nav-link" href="#section-about"> About </a> </li>
+					<li class="nav-">
+						<a class="nav-link" href="#section-project"> Project </a> </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section-blog"> Blog </a> </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section-contact"> Contact </a> </li>
+				</ul>
+			<div/>	
+		</nav>
+
+		<section id="section-showcase" class='jumbotron d-flex align-items-center'>
+			<div class="container text-light text-center">
+				<h1> Web Application </h1>
+				<p> In this page we will discuss about how to design and developt a web. </p>
+			</div>
+
+		</section>
+
+		<aside id="sidebar">
+			<div class="bg-dark text-light float-right col-5">
+				<h3> News: </h3>
+				<img src="image/web.jpg">
+			</div>
+		</aside>		
+
+		<section id="section-home" class='bg-danger p-1 container-fluid'>
+			<h1> Welcome </h1>
+			<hr>
+			<p>
+				Welcome to my page! This page is for discussing about web development.
+			</p>
+		</section>
+
+		<section id="section-about" class="bg-primary p-1 container-fluid">
+			<h1> About </h1>
+			<hr>
+
+			<div class='row'>
+				<div class="col-lg-2 col-sm-4">
+					<img src="image/profile.png" class='img-fluid'>
+				</div>
+				<div class="col-lg-10 col-sm-8">
+					<h4> Phat Vu </h4>
+					<p> This is info about me. </p>
+				</div>
+			</div>
+
+			<table class="table mt-4">
+				<thead>
+					<tr>
+						<th colspan='2' class="text-center"> Technical Skills </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th> Programs tools </th>
+						<td> Java, JavaScript </td>
+					</tr>
+					<tr>
+						<th>Frontend tools</th>
+						<td> HTML, CSS </td>
+					</tr>
+					<tr>
+						<th>Database tools</th>
+						<td>MongoDB, Mongoose, SQL</td>
+					</tr>
+					<tr>
+						<th> Version Control & Deployment tools </th>
+						<td>git, github, gitlab</td>
+					</tr>
+					<tr>
+						<th>Architecture & Design</th>
+						<td>OOP, MEAN Stack, REST, Agile, TDD</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="section-project" class="bg-success container-fluid">
+			<h1>Projects</h1>
+			<hr>
+			<p>Summary of all the projects you have worked on.</p>
+			<div class="container">
+				<div id="projects" class='card-deck text-center'>
+					<a class='card bg-dark btn' href='#' targe="_blank">
+						<div class='card-header'>
+							<p class="text-light">Projects</p>
+						</div>
+						<img class='card-img-top' src='image/logo.png'>
+						<div class="card-body">
+							<h4 class="card-title text-light">Design a simple portfolio</h4>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">by Phat Vu</small>
+						</div>
+					</a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="section-blog" class='bg-warning pb-1 container-fluid'>
+			<h1>Blog</h1>
+			<hr>
+			<p>Web development is an interesting topic. It is fun to play with the code to make a nice website. In order to design and developt a beautiful wev we have to know some definition and tools of web development such as frontend, backend, HTML, CSS,..</p>
+			<hr>
+			<article class="container">
+				<h3>HTML</h3>
+				<small>Posted by Phat Vu on 1/24/2020</small>
+				<p>First of all, we have to know the definition of HTML, how it works and what it is for.</p>
+				<a class='btn btn-outline-dark' href="post1.html">Read More</a>
+				<hr>
+			</article>
+		</section>
+
+		<section id="section-contact" class="bg-secondary container-fluid">
+			<h1>Contact</h1>
+			<hr>
+			<h4 class="text-center">Send Message</h4>
+			<form>
+				<div class="form-group">
+					<input class='form-control' type="text" id="name" placeholder="Phat Vu">
+				</div>
+				<div>
+					<input class='form-control' type="email" id="email" placeholder="ptvu3@uno.edu">
+				</div>
+				<div>
+					<input class='form-control' type="subject" id="subject" placeholder="Subject">
+				</div>
+				<div>
+					<textarea class="form-control" rows="4" id="messsage" placeholder="Message">
+					</textarea>
+				</div>
+				<button class="btn btn-lg btn-primary" type="submit"> Submit </button>
+			</form>
+		</section>
+
+		<footer class="bg-light">
+			<div class="container text-muted text-center">
+				<p>Copyright &copy; 2020 Phat Vu</p>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com,jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</body>
