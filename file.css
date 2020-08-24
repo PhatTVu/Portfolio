@@ -1,0 +1,55 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Great+Vibes|Lobster+Two|Patua+One|Prata');
+
+body{
+	background-color: rgb(245, 255, 250);
+}
+
+.centered{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bg-mintcream{
+	background-color: rgb(240, 255, 255); light blue
+}
+
+.bg-palegoldenrod{
+	background-color: rgb(135, 206, 250); dark blue
+}
+
+.bg-tan{
+	background-color: rgb(176, 224, 230); blue
+}
+
+h1.thick{
+	font-weight: bold;
+}
+
+h2.impact {
+	font-size: 4em;
+  	font-family: Impact, Charcoal, sans-serif;
+  	color: #8B0000;
+}
+
+p.small{
+	font-size: 2em;
+	color: #292F33
+}
+
+#proteinLogo{
+	filter: invert(100%);
+}
+
+.card:hover{
+	outline: black solid 5px;
+}
+
+.card{
+	max-height: 20%;
+}
+
+</style>
